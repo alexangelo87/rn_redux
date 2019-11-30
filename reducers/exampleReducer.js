@@ -3,6 +3,7 @@ const INITIAL_STATE = {
   email: 'alex@teste',
   senha: '',
   texto: '',
+  textoReduxThunk: '',
 };
 
 export default (state = INITIAL_STATE, action) => {
@@ -11,6 +12,8 @@ export default (state = INITIAL_STATE, action) => {
       return (state = {...state, email: action.payload});
     case 'modifica_texto':
       return (state = {...state, texto: action.payload});
+    case 'redux_thunk':
+      return (state = {...state, textoReduxThunk: action.payload});
     default:
       return state;
   }

@@ -27,7 +27,7 @@ const Home = props => {
           onChangeText={texto => props.modificaTexto(texto)}
         />
       </View>
-      <View styles={styles.containerText2}>
+      <View style={styles.textContainer}>
         <Text style={styles.text}>{props.texto}</Text>
       </View>
     </View>
@@ -60,9 +60,11 @@ const styles = StyleSheet.create({
   textInputContainer: {
     marginTop: 20,
   },
-  containerText2: {
-    flexDirection: 'row',
-    padding: 16,
+  textContainer: {
+    marginTop: 50,
+    height: null,
+    borderColor: 'purple',
+    borderWidth: 5,
   },
 });
 

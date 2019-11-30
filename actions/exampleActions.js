@@ -4,3 +4,10 @@ export const modificaEmail = texto => {
     payload: texto,
   };
 };
+
+export const modificaTexto = texto => {
+  return {
+    type: 'modifica_texto',
+    payload: texto,
+  };
+};
